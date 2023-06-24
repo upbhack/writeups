@@ -42,6 +42,7 @@ Then $n$ is in decimal notation:
 
 So $x$ is just `(int(str(n)[:250]) - carry) * 10**250 + int(str(n)[-250:])`, where `carry <= 10`.
 Then
+
 $$
 \begin{aligned}
 y &= (n - x \times 10^{500} - x) / 10^{250}\\
