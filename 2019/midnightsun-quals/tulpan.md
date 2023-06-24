@@ -35,6 +35,7 @@ We assume that the flag bytes are its coefficients.
 
 The prover chooses a random polynomial $r$ of degree $k$ from $\mathbb F_p[x]$ (https://en.wikipedia.org/wiki/Polynomial_ring).
 It chooses $masked = secret\times r\mod (x^k+1)$ and returns $r$ and $y$, where 
+
 $$
 y[i] = \begin{cases}
 masked(i), &\text{with probability } (1-alpha/\beta)\approx 0.6\\
